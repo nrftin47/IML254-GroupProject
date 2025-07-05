@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A pastel world theme site with creative brick-based ideas" />
+  <meta name="keywords" content="bricks, pastel, creative toys, corporate" />
+  <meta name="author" content="BrickWorld Co." />
+  <title>Home - BrickWorld Co.</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+  <div class="hamburger-container">
+    <div id="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <div id="hamburger-links" class="hamburger-links hidden">
+    <a href="index.html" class="active">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="career.html">Careers</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contactinfo.html">Contact</a>
+    <a href="group.html">Group</a>
+  </div>
+
+  <div id="header" class="banner-header">
+    <div class="header-content">
+      <h1>BrickWorld Co.</h1>
+      <p>Where Imagination Begins</p>
+    </div>
+  </div>
+
+  <div id="nav">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contactinfo.html">Contact</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <section class="hero">
+      <video class="framed-video" width="640" height="360" controls autoplay muted>
+        <source src="bricks.mp4" type="video/mp4">
+      </video>
+      <h2>Build Your Dream, One Brick at a Time</h2>
+      <p>Explore a world of creativity with playful, pastel-perfect sets for all ages.</p>
+      <button onclick="location.href='products.html'">Shop the Collection</button>
+
+      <div class="highlight">
+        <h3>Why Choose BrickWorld?</h3>
+        <div class="features">
+          <div class="feature-card">
+            <img src="eco.jpg" alt="Eco icon" />
+            <h4>Eco-Conscious</h4>
+            <p>Sustainably made with love for the planet.</p>
+          </div>
+          <div class="feature-card">
+            <img src="playful.jpg" alt="Fun icon" />
+            <h4>Playful & Inclusive</h4>
+            <p>Designed for minds of all ages and styles.</p>
+          </div>
+          <div class="feature-card">
+            <img src="cat.jpg" alt="Customize icon" />
+            <h4>Custom Sets</h4>
+            <p>Mix-and-match pastel creations your way.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="footer">
+    <p>© 2025 BrickWorld Co.</p>
+    <p>Disclaimer: This website is for educational use only. It is not the official site.</p>
+  </div>
+
+  <script type="text/javascript">
+    function toggleMenu() {
+      const menu = document.getElementById("hamburger-links");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+
+</body>
+</html>

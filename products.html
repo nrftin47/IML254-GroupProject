@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products – BrickWorld Co.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="header">
+    <div class="hamburger-container">
+      <div id="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+    <div id="header">
+      <div class="header-content">
+        <h1>BrickWorld Co.</h1>
+      </div>
+    </div>
+  </div>
+
+  <div id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contactinfo.html">Contact</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </div>
+
+  <div id="hamburger-links" class="hamburger-links hidden">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="faq.html">FAQ</a>
+    <a href="career.html">Career</a>
+    <a href="contactinfo.html">Contact</a>
+    <a href="group.html">Group</a>
+  </div>
+
+  <div id="container">
+    <div id="content">
+      <h1>Our Products</h1>
+
+      <div id="category-filter">
+        <button onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('sakuratreehouse')">Sakura Treehouse Collection</button>
+        <button onclick="filterProducts('buildings')">Mood Building Collection</button>
+        <button onclick="filterProducts('desserts')">Dessert Party Collection</button>
+        <button onclick="filterProducts('vehicles')">Wheels Collection</button>
+      </div>
+
+      <section class="product-section">
+        <div class="product-gallery">
+
+          <div class="product-item sakuratreehouse">
+            <div class="image-item">
+              <img src="sakura1.jpg" alt="Sakura Treehouse 1" />
+              <p class="brick-name">Purple Sakura Treehouse</p>
+              <button onclick="addToCart('Purple Sakura Treehouse', 25)">Add to Cart</button>
+            </div>
+            <div class="image-item">
+              <img src="sakura2.jpg" alt="Sakura Treehouse 2" />
+              <p class="brick-name">Pink Sakura Treehouse</p>
+              <button onclick="addToCart('Pink Sakura Treehouse', 25)">Add to Cart</button>
+            </div>
+            <div class="image-item">
+              <img src="sakura3.jpg" alt="Sakura Treehouse 3" />
+              <p class="brick-name">Winter Sakura Treehouse</p>
+              <button onclick="addToCart('Winter Sakura Treehouse', 25)">Add to Cart</button>
+            </div>
+
+            <h2>Sakura Treehouse Collection <span class="tag new">New</span></h2>
+            <p>RM25.00</p>
+            <p>A trio of enchanting treehouses built brick by brick among blooming sakura. Each one captures a season, a story, and a little escape above the world.</p>
+          </div>
+
+          <div class="product-item buildings">
+  <div class="image-item">
+  <img src="build1.jpg" alt="Dessert Shop" />
+  <p class="brick-name">Dessert Shop</p>
+  <button onclick="addToCart('Dessert Shop', 32)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="build2.jpg" alt="Music Bar" />
+  <p class="brick-name">Music Bar</p>
+  <button onclick="addToCart('Music Bar', 32)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="build3.jpg" alt="Coffee Shop" />
+  <p class="brick-name">Coffee Shop</p>
+  <button onclick="addToCart('Coffee Shop', 32)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="build4.jpg" alt="Flower Shop" />
+  <p class="brick-name">Flower Shop</p>
+  <button onclick="addToCart('Flower Shop', 32)">Add to Cart</button>
+</div>
+
+<h2>Mood Building Collection <span class="tag best">Best Seller</span></h2>
+  <p>RM32.00</p>
+  <p>From coffee shop to flower shop, this collection brings everyday dreams to life in miniature form. Each build carries a mood like warm, gentle, and full of charm.</p>
+</div>
+
+<div class="product-item desserts">
+<div class="image-item">
+  <img src="dessert1.jpg" alt="Mint Pudding Snow" />
+  <p class="brick-name">Mint Pudding Snow</p>
+  <button onclick="addToCart('Mint Pudding Snow', 9.90)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="dessert2.jpg" alt="Mango Cheese" />
+  <p class="brick-name">Mango Cheese</p>
+  <button onclick="addToCart('Mango Cheese', 9.90)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="dessert3.jpg" alt="Matcha Mousse" />
+  <p class="brick-name">Matcha Mousse</p>
+  <button onclick="addToCart('Matcha Mousse', 9.90)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="dessert4.jpg" alt="Taro Mud Boba" />
+  <p class="brick-name">Taro Mud Boba</p>
+  <button onclick="addToCart('Taro Mud Boba', 9.90)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="dessert5.jpg" alt="Coco Olly" />
+  <p class="brick-name">Coco Olly</p>
+  <button onclick="addToCart('Coco Olly', 9.90)">Add to Cart</button>
+</div>
+
+<h2>Dessert Party Collection</h2>
+  <p>RM9.90</p>
+  <p>A delightful spread of brick-built desserts, crafted with sweetness and imagination. Every treat is a bite-sized celebration of color, texture, and joy.</p>
+</div>
+
+<div class="product-item vehicles">
+<div class="image-item">
+  <img src="vehicle1.jpg" alt="Bean Car" />
+  <p class="brick-name">Bean Car</p>
+  <button onclick="addToCart('Bean Car', 12)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="vehicle2.jpg" alt="London Double Decker Bus" />
+  <p class="brick-name">London Double Decker Bus</p>
+  <button onclick="addToCart('London Double Decker Bus', 12)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="vehicle3.jpg" alt="MotorBike" />
+  <p class="brick-name">MotorBike</p>
+  <button onclick="addToCart('MotorBike', 12)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="vehicle4.jpg" alt="Race Car" />
+  <p class="brick-name">Race Car</p>
+  <button onclick="addToCart('Race Car', 12)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="vehicle5.jpg" alt="Antique Car" />
+  <p class="brick-name">Antique Car</p>
+  <button onclick="addToCart('Antique Car', 12)">Add to Cart</button>
+</div>
+<div class="image-item">
+  <img src="vehicle6.jpg" alt="Bullet Train" />
+  <p class="brick-name">Bullet Train</p>
+  <button onclick="addToCart('Bullet Train', 12)">Add to Cart</button>
+</div>
+
+<h2>Wheels Collection <span class="tag best">Best Seller</span></h2>
+  <p>RM12.00</p>
+  <p>A playful lineup of brick vehicles, each with its own spirit like vintage, quirky, or bold. Built to move hearts, even when standing still.</p>
+</div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+      <section class="cart-section">
+        <h2>Your Cart 🧺</h2>
+        <ul id="cart-list"></ul>
+        <p><strong>Total:</strong> RM <span id="cart-total">0.00</span></p>
+        <button onclick="checkoutCart()">Checkout</button>
+      </section>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>© 2025 BrickWorld Co.</p>
+    <p>Disclaimer: This website is for educational use only. It is not the official site.</p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("hamburger-links");
+      if (menu) menu.classList.toggle("hidden");
+    }
+
+    function filterProducts(category) {
+      let items = document.getElementsByClassName('product-item');
+      for (let i = 0; i < items.length; i++) {
+        if (category === 'all' || items[i].classList.contains(category)) {
+          items[i].style.display = 'block';
+        } else {
+          items[i].style.display = 'none';
+        }
+      }
+    }
+
+    let cart = [];
+
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      updateCart();
+    }
+
+    function updateCart() {
+      const list = document.getElementById("cart-list");
+      const total = document.getElementById("cart-total");
+      list.innerHTML = "";
+      let sum = 0;
+
+      cart.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} – RM${item.price.toFixed(2)}`;
+        list.appendChild(li);
+        sum += item.price;
+      });
+
+      total.textContent = sum.toFixed(2);
+    }
+
+    function checkoutCart() {
+      if (cart.length === 0) {
+        alert("Your cart is empty!");
+      } else {
+        alert("Thank you for shopping at BrickWorld Co.! 💖");
+        cart = [];
+        updateCart();
+      }
+    }
+  </script>
+</body>
+</html>

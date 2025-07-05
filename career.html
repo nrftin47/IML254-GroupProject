@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Career Opportunities – BrickWorld Co." />
+  <meta name="author" content="BrickWorld Co." />
+  <title>Career – BrickWorld Co.</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+  <div id="header">
+    <div class="hamburger-container">
+      <div id="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+    <div id="header">
+      <div class="header-content">
+        <h1>BrickWorld Co.</h1>
+      </div>
+    </div>
+  </div>
+
+  <div id="hamburger-links" class="hamburger-links hidden">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="faq.html">FAQ</a>
+    <a href="career.html">Career</a>
+    <a href="contactinfo.html">Contact</a>
+    <a href="group.html">Group</a>
+  </div>
+
+  <div id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="career.html" class="active">Career</a></li>
+      <li><a href="contactinfo.html">Contact</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </div>
+
+  <section id="career">
+    <h2>We're Hiring!</h2>
+    <p class="career-intro">At BrickWorld Co., we believe in imagination, color, and creativity. If you're passionate about building pastel worlds and inspiring joy, we want to hear from you!</p>
+
+    <div class="job-listing">
+      <div class="job-card">
+        <h3>🧱 Retail Assistant</h3>
+        <p>Help customers discover their perfect pastel sets at our physical stores.</p>
+      </div>
+      <div class="job-card">
+        <h3>🎨 Creative Designer</h3>
+        <p>Design pastel-inspired builds and contribute to new product ideas.</p>
+      </div>
+      <div class="job-card">
+        <h3>🚚 Logistics Coordinator</h3>
+        <p>Organize shipment and manage supply of pastel bricks across regions.</p>
+      </div>
+    </div>
+
+    <h2>Apply Now</h2>
+    <form class="career-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="position">Position You're Applying For:</label>
+      <select id="position" name="position">
+        <option value="retail">Retail Assistant</option>
+        <option value="designer">Creative Designer</option>
+        <option value="logistics">Logistics Coordinator</option>
+      </select>
+
+      <label for="message">Why would you love to join us?</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <div id="footer">
+    <p>© 2025 BrickWorld Co.</p>
+    <p>Disclaimer: This website is for educational use only. It is not the official site.</p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("hamburger-links");
+      if (menu) menu.classList.toggle("hidden");
+    }
+  </script>
+
+</body>
+</html>
